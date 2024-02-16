@@ -7,7 +7,7 @@ import axios from "axios";
 const App =()=>{
   useEffect(()=>
   {
-    axios.get('https://expensetracker-aj69.onrender.com/get-entry')
+    axios.get('https://expensetracker-aj69.onrender.com/get-data')
     .then(res =>{
       console.log(res.data)
       setExpenses(res.data)
